@@ -3,9 +3,7 @@ package com.taufik.mvvmtest;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-
 import com.taufik.buttertoast.ButterToast;
-import com.taufik.buttertoast.ButterToast1;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +18,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showToast() {
-        new ButterToast1.Builder(this).setMessage("demo").create();
+        new ButterToast.Builder(this).setMessage("demo").create();
     }
 }

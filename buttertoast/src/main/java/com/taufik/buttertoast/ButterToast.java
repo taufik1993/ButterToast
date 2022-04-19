@@ -3,18 +3,18 @@ package com.taufik.buttertoast;
 import android.content.Context;
 import android.widget.Toast;
 
-public class ButterToast1 {
+public class ButterToast {
     private String message;
     private int resourceId;
     private Context context;
 
-    private ButterToast1(final Builder builder) {
+    private ButterToast(final Builder builder) {
         message = builder.message;
         resourceId = builder.resourceId;
         context = builder.context;
     }
 
-    public ButterToast1 showToast(){
+    public ButterToast showToast(){
         Toast.makeText(context,message,Toast.LENGTH_SHORT).show();
         return this;
     }
@@ -38,8 +38,8 @@ public class ButterToast1 {
             return this;
         }
 
-        public ButterToast1 create() {
-            return new ButterToast1(this).showToast();
+        public ButterToast create() {
+            return new ButterToast(this).showToast();
         }
     }
 }
