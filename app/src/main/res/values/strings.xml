@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MVVMTest</string>
+    <string name="demo">Demo</string>
+</resources>
